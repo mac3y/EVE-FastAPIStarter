@@ -8,14 +8,5 @@ class UserService:
         self.user_repo = user_repo
 
     def get_all_users(self):
-        return self.user_repo.get_all()
-    
-    def get_user_by_id(self, user_id: int):
-        return self.user_repo.get_by_id(user_id)
-    
-    def get_user_by_username(self, username: str):
-        return self.user_repo.get_by_username(username)
-    
-    def search_users(self, query: str, page:int=1, limit:int=10):
-        return self.user_repo.search_users(query, page, limit)
+        return self.user_repo.get_all_users()
     
