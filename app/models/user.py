@@ -1,6 +1,7 @@
 from sqlmodel import Field, SQLModel
 from typing import Optional
 from pydantic import EmailStr
+from typing import List
 
 
 class UserBase(SQLModel,):
